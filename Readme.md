@@ -25,7 +25,7 @@ A simple Node.js/Express REST API for managing books and borrow operations in a 
 ## Project Structure
 
 ```
-Src/
+src/
 ├── controllers/
 │   ├── bookcontroller.ts
 │   └── borrowController.ts

@@ -52,7 +52,7 @@ BookSchema.pre<IBook>('save', function (next) {
   next();
 });
 
-// Post 'findOneAndUpdate' middleware to update available after update
+//Post 'findOneAndUpdate' middleware to update available after update
 BookSchema.post('findOneAndUpdate', async function (doc: IBook) {
   if (doc) {
     doc.available = doc.copies > 0;
