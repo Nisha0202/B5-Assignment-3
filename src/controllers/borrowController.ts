@@ -7,7 +7,7 @@ export const borrowBook = async (req: Request, res: Response, next: NextFunction
     if (!book || !quantity || !dueDate) {
       throw new Error('book, quantity, and dueDate are required');
     }
-    // Use static method for business logic
+    // Using static method for business logic
     const borrow = await (Borrow as any).borrowBook(book, quantity, dueDate);
 
     res.status(201).json({
@@ -22,7 +22,7 @@ export const borrowBook = async (req: Request, res: Response, next: NextFunction
 
 export const getBorrowSummary = async (req: Request, res: Response, next: NextFunction) => {
   try {
-    // Use aggregation pipeline
+    // Using aggregation pipeline
     const summary = await Borrow.aggregate([
       {
         $group: {
