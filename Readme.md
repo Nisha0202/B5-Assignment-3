@@ -27,10 +27,10 @@ A simple Node.js/Express REST API for managing books and borrow operations in a 
 ```
 Src/
 ├── controllers/
-│   ├── bookcontrollers.ts
-│   └── borrowControllers.ts
+│   ├── bookcontroller.ts
+│   └── borrowController.ts
 ├── middlewares/
-│   └── errorHandelers.ts
+│   └── errorHandeler.ts
 ├── models/
 │   ├── book.model.ts
 │   └── borrow.model.ts
