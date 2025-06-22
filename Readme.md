@@ -9,8 +9,6 @@ A simple Node.js/Express REST API for managing books and borrow operations in a 
 - [Installation](#installation)
 - [Environment Variables](#environment-variables)
 - [API Endpoints](#api-endpoints)
-- [Why This Structure?](#why-this-structure)
-- [License](#license)
 
 ---
 
@@ -81,4 +79,6 @@ PORT=3000
 
 - `POST   /api/borrow` — Borrow a book
 - `GET    /api/borrow` — Get summary of borrowed books
+
+
 
