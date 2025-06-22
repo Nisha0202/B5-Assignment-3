@@ -44,6 +44,13 @@ BorrowSchema.statics.borrowBook = async function (bookId: string, quantity: numb
   return borrow;
 };
 
+BorrowSchema.set('toJSON', {
+  transform: function (doc, ret) {
+    delete ret.__v;
+    return ret;
+  }
+});
+
 export interface BorrowModel extends Model<IBorrow> {
   borrowBook(bookId: string, quantity: number, dueDate: Date): Promise<IBorrow>;
 }
